@@ -9,8 +9,8 @@
   <version>1.0-SNAPSHOT</version>
   <packaging>war</packaging>
 
-  <name>GameHub Maven Webapp</name>
-  <url>http://www.gamehub.com</url>
+  <name>MVC Application</name>
+  <url>http://www.mvcapp.com</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

@@ -1,4 +1,4 @@
-package com.gamehub.config;
+package com.mvcapp.config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 

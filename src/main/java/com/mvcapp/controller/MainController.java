@@ -1,4 +1,4 @@
-package com.gamehub.controller;
+package com.mvcapp.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
