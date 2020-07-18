@@ -17,12 +17,15 @@ public class MainController {
     public String calculatorPage(@RequestParam("x") double x, @RequestParam("y") double y,
                             @RequestParam("action") String action, Model model){
         double result = 0;
+        char actionChar;
 
         switch (action) {
             case "multiply":
                 result = x * y;
+                actionChar = '*';
                 break;
             case "divide":
+                actionChar = '/';
                 try {
                     result = x / y;
                 } catch (ArithmeticException ignored) {
@@ -30,16 +33,19 @@ public class MainController {
                 }
                 break;
             case "addition":
+                actionChar = '+';
                 result = x+y;
                 break;
             case "subtraction":
+                actionChar = '-';
                 result = x-y;
                 break;
             default:
+                actionChar = '~';
                 result=0;
                 break;
         }
-        model.addAttribute("result",result);
+        model.addAttribute("message",x + " " + actionChar + " " + y + "=" + " " + result);
         return "calculator.html";
     }
 }
